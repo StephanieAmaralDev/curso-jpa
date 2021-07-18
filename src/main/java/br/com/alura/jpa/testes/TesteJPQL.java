@@ -16,7 +16,7 @@ public class TesteJPQL {
         //String jpql = "select m from Movimentacao m where m.conta.id = 2";
 
         Conta conta = new Conta();
-        conta.setId(2L);
+        conta.setId(3L);
         TypedQuery<Movimentacao> query = em.createQuery(jpql, Movimentacao.class);
         query.setParameter("pConta", conta);
 
